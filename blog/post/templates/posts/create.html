@@ -1,0 +1,39 @@
+{% extends './base.html' %} {% block content %}
+
+<div class="text-center">
+  <h1>add</h1>
+</div>
+
+<form method="post">
+  <div class="mb-3">
+    <label for="title" class="form-label">Title</label>
+    <input
+      type="text"
+      name="title"
+      class="form-control"
+      id="title"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="body" class="form-label">BODY</label>
+    <input
+      type="text"
+      name="body"
+      class="form-control"
+      id="body"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="image" class="form-label">Image</label>
+    <input
+      type="text"
+      name="image"
+      class="form-control"
+      id="image"
+    />
+  </div>
+  <button type="submit" class="btn btn-dark">add</button>
+</form>
+
+{% endblock content %}
